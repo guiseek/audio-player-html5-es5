@@ -16,7 +16,6 @@
     var createAudioContext = function() {
       // Creating the context and pluging the stream to api node
       audioContext = new (window.AudioContext || window.webkitAudioContext);
-      console.log(audioContext);
       source = audioContext.createMediaElementSource(audio);
 
       // Creating the analyser and defining the frequency array
